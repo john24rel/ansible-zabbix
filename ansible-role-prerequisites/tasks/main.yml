@@ -22,7 +22,7 @@
     enabled: yes
    
 - name: enable php72
-  shell: yum-config-manager --enable "{{php72}}" 
+  shell: yum-config-manager --enable "{{php_version}}" 
 
 
 - name: Install Prerequisites
