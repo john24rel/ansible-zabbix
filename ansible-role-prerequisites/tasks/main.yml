@@ -75,7 +75,7 @@
   become_user: root
   shell: zcat create.sql.gz | mysql -u root zabbix
   args:
-    chdir: /usr/share/doc/zabbix-server-mysql-5.0.6
+    chdir: /usr/share/doc/zabbix-server-mysql-5*
 
 - name:
   shell: source /tmp/changes.sh
